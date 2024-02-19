@@ -1,4 +1,4 @@
-Library Management System
+<h1>Library Management System</h1>
 
 A simple web based DBMS for a library which lists the content of all tables within the database, made with HTML, PHP and MySQL.
 
