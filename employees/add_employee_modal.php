@@ -1,0 +1,35 @@
+<?php
+echo "<div class='modal fade' id='addEmployeeModal' tabindex='-1' role='dialog' aria-labelledby='addEmployeeModalLabel' aria-hidden='true'>";;
+echo "<div class='modal-dialog' role='document'>";;
+echo "<div class='modal-content'>";;
+echo "<div class='modal-header'>";;
+echo "<h5 class='modal-title' id='addEmployeeModalLabel'>Add New Employee</h5>";
+echo "<button type='button' class='close' data-dismiss='modal' aria-label='Close'>";
+echo "<span aria-hidden='true'>&times;</span>";
+echo "</button>";
+echo "</div>";
+echo "<div class='modal-body'>";
+echo "<form action='add_employee.php' method='POST'>";
+echo "<div class='form-group'>";
+echo "<label for='name'>Name</label>";
+echo "<input type='text' class='form-control' id='name' name='name' required>";
+echo "</div>";
+echo "<div class='form-group'>";
+echo "<label for='position'>Position</label>";
+echo "<input type='text' class='form-control' id='position' name='position' required>";
+echo "</div>";
+echo "<div class='form-group'>";
+echo "<label for='contact_info'>Contact Info</label>";
+echo "<input type='text' class='form-control' id='contact_info' name='contact_info' required>";
+echo "</div>";
+echo "<div class='form-group'>";
+echo "<label for='branch'>Branch ID</label>";
+echo "<input type='text' class='form-control' id='branch' name='branch_id' required>";
+echo "</div>";
+echo "<button type='submit' class='btn btn-primary'>Add Employee</button>";
+echo "</form>";
+echo "</div>";
+echo "</div>";
+echo "</div>";
+echo "</div>";
+?>

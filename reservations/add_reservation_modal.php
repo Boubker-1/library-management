@@ -1,0 +1,35 @@
+<?php
+echo "<div class='modal fade' id='addReservationModal' tabindex='-1' role='dialog' aria-labelledby='addReservationModalLabel' aria-hidden='true'>";
+echo "<div class='modal-dialog' role='document'>";
+echo "<div class='modal-content'>";
+echo "<div class='modal-header'>";
+echo "<h5 class='modal-title' id='addReservationModalLabel'>Add New Reservation</h5>";
+echo "<button type='button' class='close' data-dismiss='modal' aria-label='Close'>";
+echo "<span aria-hidden='true'>&times;</span>";
+echo "</button>";
+echo "</div>";
+echo "<div class='modal-body'>";
+echo "<form action='add_reservation.php' method='POST'>";
+echo "<div class='form-group'>";
+echo "<label for='member'>Member ID</label>";
+echo "<input type='text' class='form-control' id='member' name='member_id' required>";
+echo "</div>";
+echo "<div class='form-group'>";
+echo "<label for='book'>Book ID</label>";
+echo "<input type='text' class='form-control' id='book' name='book_id' required>";
+echo "</div>";
+echo "<div class='form-group'>";
+echo "<label for='reservation_date'>Reservation Date</label>";
+echo "<input type='text' class='form-control' id='reservation_date' name='reservation_date' required>";
+echo "</div>";
+echo "<div class='form-group'>";
+echo "<label for='status'>Status</label>";
+echo "<input type='text' class='form-control' id='status' name='status' required>";
+echo "</div>";
+echo "<button type='submit' class='btn btn-primary'>Add Reservation</button>";
+echo "</form>";
+echo "</div>";
+echo "</div>";
+echo "</div>";
+echo "</div>";
+?>

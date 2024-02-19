@@ -1,0 +1,35 @@
+<?php
+echo "<div class='modal fade' id='addBorrowingModal' tabindex='-1' role='dialog' aria-labelledby='addBorrowingModalLabel' aria-hidden='true'>";;
+echo "<div class='modal-dialog' role='document'>";;
+echo "<div class='modal-content'>";;
+echo "<div class='modal-header'>";;
+echo "<h5 class='modal-title' id='addBorrowingModalLabel'>Add New Borrowing</h5>";
+echo "<button type='button' class='close' data-dismiss='modal' aria-label='Close'>";
+echo "<span aria-hidden='true'>&times;</span>";
+echo "</button>";
+echo "</div>";
+echo "<div class='modal-body'>";
+echo "<form action='add_borrowing.php' method='POST'>";
+echo "<div class='form-group'>";
+echo "<label for='member_id'>Member ID</label>";
+echo "<input type='text' class='form-control' id='member_id' name='member_id' required>";
+echo "</div>";
+echo "<div class='form-group'>";
+echo "<label for='book'>Book ID</label>";
+echo "<input type='text' class='form-control' id='book' name='book_id' required>";
+echo "</div>";
+echo "<div class='form-group'>";
+echo "<label for='borrowing_date'>Borrowing Date</label>";
+echo "<input type='text' class='form-control' id='borrowing_date' name='borrowing_date' required>";
+echo "</div>";
+echo "<div class='form-group'>";
+echo "<label for='return_date'>Return Date</label>";
+echo "<input type='text' class='form-control' id='return_date' name='return_date' required>";
+echo "</div>";
+echo "<button type='submit' class='btn btn-primary'>Add Borrowing</button>";
+echo "</form>";
+echo "</div>";
+echo "</div>";
+echo "</div>";
+echo "</div>";
+?>
